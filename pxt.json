@@ -1,0 +1,28 @@
+{
+    "name": "Module_World_IR",
+    "version": "1.0.0",
+    "description": "Extension for Module_World_IR",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "shims.d.ts",
+        "enums.d.ts",
+        "Module_World_IR.cpp",
+        "ReceiverIR.cpp",
+        "ReceiverIR.h",
+        "RemoteIR.h",
+        "Module_World_IR.ts",
+        "_locales/zh-cn/Module_World_IR-strings.json",
+        "_locales/zh-tw/Module_World_IR-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
