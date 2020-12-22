@@ -1,1 +1,16 @@
+{
+  
+    "Module_World_IR|block": "魔塊世界紅外遙控",
+	"{id:category}Module_World_IR": "魔塊世界紅外遙控",
+    "Module_World_IR.init|block": "連接紅外接收器到引腳 %pin",
+    "Module_World_IR.onPressEvent|block": "當按鈕 |%btn| 被按下時",
+    "Module_World_IR": "紅外遙控",
+    "Module_World_IR.init": "初始化遙控器",
+    "Module_World_IR.onPressEvent": "按鈕按下",
+    "Module_World_IR.initv2": "初始化遙控器",
+    "Module_World_IR.initv2|block": "連接紅外接收器到引腳 %pin",
+    "Module_World_IR.IR_readV2|block": "讀到 |%btn| 被按下時",
+    "Module_World_IR.IR_callbackUserV2|block": "接收紅外訊號"
 
+  }
+  
