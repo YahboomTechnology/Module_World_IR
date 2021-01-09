@@ -6,7 +6,7 @@ modified by chengengyue
 /**
  * IR remote
  */
-//% icon="\uf1eb" weight=20 color="#ad7e2e"
+//% icon="\uf1eb" weight=25 color="#ad7e2e"
 namespace Module_World_IR {
 
     let irstate:number;
