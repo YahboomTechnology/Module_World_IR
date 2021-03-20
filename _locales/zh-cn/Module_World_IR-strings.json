@@ -1,7 +1,7 @@
 {
   
-    "Module_World_IR|block": "魔块世界红外遥控",
-	"{id:category}Module_World_IR": "魔块世界红外遥控",
+    "Module_World_IR|block": "红外遥控",
+	"{id:category}Module_World_IR": "红外遥控",
     "Module_World_IR.init|block": "连接红外接收器到引脚 %pin",
     "Module_World_IR.onPressEvent|block": "当按钮 |%btn| 被按下时",
     "Module_World_IR": "红外遥控",
