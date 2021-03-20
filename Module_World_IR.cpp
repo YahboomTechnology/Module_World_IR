@@ -35,10 +35,10 @@ enum class RemoteButton {
 };
 
 enum class Pins{
-    D1 = 20,
-    D2 = 18,
-    D3 = 1,
-    D4 = 2
+    P12= 20,
+    P8=  18,
+    P2=  1,
+    P1=  2
 };
 
 namespace Module_World_IR {
