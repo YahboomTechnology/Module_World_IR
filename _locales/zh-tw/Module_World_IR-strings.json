@@ -1,7 +1,7 @@
 {
   
     "Module_World_IR|block": "紅外遙控",
-	"{id:category}Module_World_IR": "紅外遙控",
+    "{id:category}Module_World_IR": "紅外遙控",
     "Module_World_IR.init|block": "連接紅外接收器到引腳 %pin",
     "Module_World_IR.onPressEvent|block": "當按鈕 |%btn| 被按下時",
     "Module_World_IR": "紅外遙控",
