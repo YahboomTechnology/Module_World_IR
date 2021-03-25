@@ -37,8 +37,7 @@ enum class RemoteButton {
 enum class Pins{
     P12= 20,
     P8=  18,
-    P2=  1,
-    P1=  2
+    P2=  1
 };
 
 namespace Module_World_IR {
@@ -102,8 +101,6 @@ namespace Module_World_IR {
 			while(!uBit.io.P8.getDigitalValue());
 		else if(pinv2 == 1)
 			while(!uBit.io.P2.getDigitalValue());
-		else 
-			while(!uBit.io.P1.getDigitalValue());
         nowtime = system_timer_current_time_us();
         if((nowtime - lasttime) > 400 && (nowtime - lasttime) < 700){
 			if(pinv2 == 20)
@@ -112,8 +109,6 @@ namespace Module_World_IR {
 				while(uBit.io.P8.getDigitalValue());
 			else if(pinv2 == 1)
 				while(uBit.io.P2.getDigitalValue());
-			else
-				while(uBit.io.P1.getDigitalValue());
             lasttime = system_timer_current_time_us();
             if((lasttime - nowtime)>400 && (lasttime - nowtime) < 700){
                 return 0;
@@ -173,14 +168,6 @@ namespace Module_World_IR {
 					return;
 				}
 			}
-		else 
-			while(uBit.io.P1.getDigitalValue()){
-				nowtime = system_timer_current_time_us();
-				if((nowtime - lasttime) > 100000){
-					ir_code = 0xff00;
-					return;
-				}
-			}
         lasttime = system_timer_current_time_us();
 		if(pinv2 == 20)
 			while(!uBit.io.P12.getDigitalValue());
@@ -188,8 +175,6 @@ namespace Module_World_IR {
 			while(!uBit.io.P8.getDigitalValue());
 		else if(pinv2 == 1)
 			while(!uBit.io.P2.getDigitalValue());
-		else
-			while(!uBit.io.P1.getDigitalValue());
         nowtime = system_timer_current_time_us();
         if((nowtime - lasttime) < 10000 && (nowtime - lasttime) > 8000){
 			if(pinv2 == 20)
@@ -198,8 +183,6 @@ namespace Module_World_IR {
 				while(uBit.io.P8.getDigitalValue());
 			else if(pinv2 == 1)
 				while(uBit.io.P2.getDigitalValue());
-			else
-				while(uBit.io.P1.getDigitalValue());
             lasttime = system_timer_current_time_us();
             if((lasttime - nowtime) > 4000 && (lasttime - nowtime) < 5000){
                 pulse_deal();
@@ -212,8 +195,6 @@ namespace Module_World_IR {
 					while(!uBit.io.P8.getDigitalValue());
 				else if(pinv2 == 1)
 					while(!uBit.io.P2.getDigitalValue());
-				else
-					while(!uBit.io.P1.getDigitalValue());
                 nowtime = system_timer_current_time_us();
                 if((nowtime - lasttime) > 500 && (nowtime - lasttime) < 700){
                     data = ir_code;
