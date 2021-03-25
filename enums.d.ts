@@ -30,7 +30,6 @@
     P12= 20,
     P8=  18,
     P2=  1,
-    P1=  2,
     }
 
 // Auto-generated. Do not edit. Really.
